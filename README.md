@@ -6,13 +6,13 @@
   This project generates a polished README document using user inputs
 
   ## Table of Contents
-  - [Heading](##Description)
-  - [Heading](##Installation-Instructions)
-  - [Heading](##Contribution-Guidelines)
-  - [Heading](##Usage-Information)
-  - [Heading](##Testing-Instructions)
-  - [Heading](##Feedback)
-  - [Heading](##License)
+  - [Heading](#Description)
+  - [Heading](#Installation-Instructions)
+  - [Heading](#Contribution-Guidelines)
+  - [Heading](#Usage-Information)
+  - [Heading](#Testing-Instructions)
+  - [Heading](#Feedback)
+  - [Heading](#License)
 
 
   ## Installation-Instructions
