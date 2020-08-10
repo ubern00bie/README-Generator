@@ -96,7 +96,7 @@ function generateText(answers,badge) {
   >Test 3
 
   ## Feedback 
-  I can be reached at ${answers.contactinfo} for any additional questions or information about this README generator.
+  For questions or information about this README generator, I can be reached at ${answers.contactinfo} 
   Find me on GitHub here: https://www.github.com/${answers.github}
   
   ## License
