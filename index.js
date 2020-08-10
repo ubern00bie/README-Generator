@@ -4,12 +4,10 @@ const util = require("util");
 const inquirer = require("inquirer");
 
 //promisify from utility applied to writeFile from 'fs'
-const readFileAsync = util.promisify(fs.readFile);
-const writeFileAsync = util.promisify(fs.writeFile);
+const readFile = util.promisify(fs.readFile);
+const writeToFile = util.promisify(fs.writeFile);
 
-// run prompts with inquirer to get generate user data
-function getUserData() {
-  return inquirer.prompt([
+const questions = [
   {
     type:"input",
     message:"Project Title: ",
@@ -56,12 +54,15 @@ function getUserData() {
     message:"GitHub username: ",
     name:"github"
   }
-])
+]
+
+// run prompts with inquirer to get generate user data
+function getUserData() {
+  return inquirer.prompt(questions)
 }
 
 //generate README text using 'template literals'
 function generateText(answers,badge) {
-  console.log("this one" + licenseTxt);
   return `
   # Title: ${answers.title}
 >${badge}
@@ -107,7 +108,7 @@ var licenseTxt;
 var badge;
 async function init() {
   try {
-    const answers = await getUserData();
+    const answers = await getUserData(questions);
     
     if (answers.license === "MIT"){
       badge = '[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)'
@@ -121,9 +122,9 @@ async function init() {
     else { 
       badge = 'License choice invalid'
     }
-    licenseTxt = await readFileAsync('license' + answers.license + '.txt', 'utf8');
+    licenseTxt = await readFile('license' + answers.license + '.txt', 'utf8');
     const README = generateText(answers,badge);
-    await writeFileAsync("README.md", README);
+    await writeToFile("README.md", README);
     console.log("Successfully wrote README file");
   } catch(err) {
     console.log(err);
