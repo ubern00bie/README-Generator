@@ -91,9 +91,6 @@ function generateText(answers,badge) {
 
   ## Testing-Instructions
   ${answers.tests}
-  >Test 1
-  >Test 2
-  >Test 3
 
   ## Feedback 
   For questions or information about this README generator, I can be reached at ${answers.contactinfo} 
