@@ -64,8 +64,8 @@ function getUserData() {
 //generate README text using 'template literals'
 function generateText(answers,badge) {
   return `
-  #Title: ${answers.title}
->${badge}
+  # Title ${answers.title}
+ ${badge}
 ===========================================
   ## Description
   ${answers.description}
