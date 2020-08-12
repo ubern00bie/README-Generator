@@ -46,7 +46,7 @@ const questions = [
   },
   {
     type:"input",
-    message:"Contact info - E-mail Address: ",
+    message:"Feedback E-mail Address: ",
     name:"contactinfo"
   },
   {
@@ -66,19 +66,19 @@ function generateText(answers,badge) {
   return `
   # Title: ${answers.title}
 >${badge}
-
+===========================================
   ## Description
   ${answers.description}
-
+===========================================
   ## Table of Contents
-  - [Heading](## Description)
-  - [Heading](## Installation-Instructions)
-  - [Heading](## Contribution-Guidelines)
-  - [Heading](## Usage-Information)
-  - [Heading](## Testing-Instructions)
-  - [Heading](## Feedback)
-  - [Heading](## License)
-
+  - [Description](## Description)
+  - [Installation-Instructions](## Installation-Instructions)
+  - [Contribution-Guidelines](## Contribution-Guidelines)
+  - [Usage-Information](## Usage-Information)
+  - [Testing-Instructions](## Testing-Instructions)
+  - [Feedback](## Feedback)
+  - [Licanse](## License)
+===========================================
 
   ## Installation-Instructions
   ${answers.installation}
