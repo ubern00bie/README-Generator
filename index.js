@@ -64,20 +64,20 @@ function getUserData() {
 //generate README text using 'template literals'
 function generateText(answers,badge) {
   return `
-  # Title: ${answers.title}
+  #Title: ${answers.title}
 >${badge}
 ===========================================
   ## Description
   ${answers.description}
 ===========================================
   ## Table of Contents
-  - [Description](## Description)
-  - [Installation-Instructions](## Installation-Instructions)
-  - [Contribution-Guidelines](## Contribution-Guidelines)
-  - [Usage-Information](## Usage-Information)
-  - [Testing-Instructions](## Testing-Instructions)
-  - [Feedback](## Feedback)
-  - [License](## License)
+  - [Description](#Description)
+  - [Installation-Instructions](#Installation-Instructions)
+  - [Contribution-Guidelines](#Contribution-Guidelines)
+  - [Usage-Information](#Usage-Information)
+  - [Testing-Instructions](#Testing-Instructions)
+  - [Feedback](#Feedback)
+  - [License](#License)
 ===========================================
 
   ## Installation-Instructions
