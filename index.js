@@ -1,4 +1,4 @@
-// modules required to run
+;// modules required to run
 const fs = require("fs");
 const util = require("util");
 const inquirer = require("inquirer");
@@ -77,7 +77,7 @@ function generateText(answers,badge) {
   - [Usage-Information](## Usage-Information)
   - [Testing-Instructions](## Testing-Instructions)
   - [Feedback](## Feedback)
-  - [Licanse](## License)
+  - [License](## License)
 ===========================================
 
   ## Installation-Instructions

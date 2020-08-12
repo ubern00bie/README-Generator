@@ -3,7 +3,7 @@
 >[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 ===========================================
   ## Description
-  Generate quality README files with this command line app.
+  Generate quality README files with this command line app
 ===========================================
   ## Table of Contents
   - [Description](## Description)
@@ -12,7 +12,7 @@
   - [Usage-Information](## Usage-Information)
   - [Testing-Instructions](## Testing-Instructions)
   - [Feedback](## Feedback)
-  - [Licanse](## License)
+  - [License](## License)
 ===========================================
 
   ## Installation-Instructions
@@ -29,7 +29,7 @@
 
   ## Feedback 
   For questions or information about this README generator, I can be reached at I can be reached at I can be reached at jbenningfield.dev@gmail.com for any additional questions or information about this README generator. for any additional questions or information about this README generator. Find me on GitHub here: https://www.github.com/ubern00bie 
-  Find me on GitHub here: https://www.github.com/ubern00bie
+  Find me on GitHub here: https://www.github.com/Ubern00bie
   
   ## License
   Copyright (c) [year] [fullname]
